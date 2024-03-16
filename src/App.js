@@ -28,6 +28,7 @@ function App() {
   return (
     <div className="App">
       <h2>List of low calorie desserts:</h2>
+      {/* Render the DessertsList component and pass the desserts array as a prop */}
       <DessertsList data={desserts} />
     </div>
   );
