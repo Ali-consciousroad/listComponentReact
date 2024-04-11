@@ -1,3 +1,4 @@
+// Child component
 function DessertsList(props) {
   // Loop over the desserts array, the data prop to display all desserts using ES6 map function
 
@@ -7,7 +8,9 @@ function DessertsList(props) {
   // 1. Filter desserts with calories < 500 
   // 2. Sort them by calories in ascending order
   // 3. Map over the filtered and sorted desserts to generate the JSX
-  const filteredAndSortedDesserts = props.data // Access the data property passed to the DessertsList component
+
+// Access the desserts by working on the data property
+  const filteredAndSortedDesserts = props.data 
     // Filter the dessert based on the calories value
     .filter(dessert => dessert.calories < 500)
     // Sort the desserts based on the calories property in an ascending order

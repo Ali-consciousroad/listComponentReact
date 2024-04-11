@@ -1,3 +1,4 @@
+// Parent component
 import "./App.css";
 import DessertsList from "./DessertsList";
 
@@ -28,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <h2>List of low calorie desserts:</h2>
-      {/* Render the DessertsList component and pass the desserts array as a prop */}
+      {/* Render the DessertsList component by passing the desserts array as a prop named data */}
       <DessertsList data={desserts} />
     </div>
   );
