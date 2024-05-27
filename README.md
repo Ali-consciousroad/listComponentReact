@@ -1,4 +1,6 @@
 # List component
+Render and transform lists with keys in React
+
 Loop over the desserts array, the data prop to display all desserts using an ES6 map function
 
 Logic
