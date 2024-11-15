@@ -1,7 +1,7 @@
 // Child component
-function DessertsList(props) {
+function DessertsList({ data }) {
 // Access the desserts by working on the data property taken from the props object
-  const filteredAndSortedDesserts = props.data 
+  const filteredAndSortedDesserts = data 
     // Filter the dessert based on the calories value
     .filter(dessert => dessert.calories < 500)
     // Sort the desserts based on the calories property in an ascending order
