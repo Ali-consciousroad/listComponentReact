@@ -1,4 +1,8 @@
+// LOGIC
 // Child component
+// Using destructuring to use 'data' directly
+/* Another approach would have been to write DessertsList(props.data) 
+but then it would have been needed to write props.data instead of just data later in the code*/
 function DessertsList({ data }) {
 // Access the desserts by working on the data property taken from the props object
   const filteredAndSortedDesserts = data 
@@ -9,7 +13,7 @@ function DessertsList({ data }) {
     // Iterate over each element of the array and create a new array displaying the content the way we want 
     .map(dessert => (
       <li key={dessert.name}>{dessert.name} - {dessert.calories} cal</li>));
-  // View
+  // VIEW
   return (
     <ul>
       {filteredAndSortedDesserts}

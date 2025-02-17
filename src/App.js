@@ -1,3 +1,4 @@
+// Parent component importing the DessertsList.js child component
 import "./App.css";
 import DessertsList from "./DessertsList";
 
@@ -24,7 +25,6 @@ const desserts = [
   },
 ];
 
-// Parent component
 function App() {
   return (
     <div className="App">
